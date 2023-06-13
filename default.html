@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Default Constraint </title>
+
+	<style type="text/css">
+		body
+		{
+			/*background-image: linear-gradient(35deg,lightblue,brown);*/
+			background: grey;  
+			/*background: -webkit-linear-gradient(to left, #54ade0, #585c63, #51667a);  
+			background: linear-gradient(to left,#9e9ed2, #4b6276, #7F7FD5);*/
+		}
+
+		::-webkit-scrollbar 
+		{
+            width: 0px;
+        }
+
+        nav
+		{
+			font-size: 50px;
+			letter-spacing: 2px;
+			text-align: center;
+
+			font-family: Times, Times New Roman, serif;
+			color: black;
+
+			-webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    		animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    		animation-duration: 5s;
+		}
+
+		@keyframes tracking-in-contract 
+		{
+		  0% 
+		  {
+		    letter-spacing: 1em;
+		    opacity: 0;
+		  }
+		  40% 
+		  {
+		    opacity: 0.6;
+		  }
+		  100% 
+		  {
+		    letter-spacing: normal;
+		    opacity: 1;
+		  }
+		}
+
+		.flexbox
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.image
+		{
+			margin: 50px;
+
+			height: 300px;
+			width: 560px;
+			border-radius: 50px;
+		}
+
+		.i1
+		{
+			margin: 50px;
+
+			height: 350px;
+			width: 850px;
+			border-radius: 50px;
+		}
+
+		.image:hover
+		{
+			box-shadow: -20px 20px 60px white, 20px -20px 60px white;
+		}
+
+		.i1:hover
+		{
+			box-shadow: -20px 20px 60px white, 20px -20px 60px white;
+		}
+
+	</style>
+
+</head>
+<body>
+	<nav>  Default Constraint </nav>
+
+	<div class="flexbox">
+		<img src="https://mjnvsai.github.io/Database-Management/Media/pic40.PNG" class="i1"> 
+		<img src="https://mjnvsai.github.io/Database-Management/Media/pic41.PNG" class="image"> 
+	</div>
+
+</body>
+</html>
